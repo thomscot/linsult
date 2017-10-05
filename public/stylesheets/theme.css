@@ -91,7 +91,22 @@ a:hover,a:focus {
 .navbar-custom .nav li.active a:hover {
 	color:#1ba39c;
 }
-@media(min-width:768px) {
+
+.intro {
+	display:table;
+	width:100%;
+	height:auto;
+	padding:100px 0 100px 0;
+	text-align:center;
+	color:#fff;
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('/../images/linsultSmall.jpg'); /* use resized image for smaller screens */
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	-o-background-size:cover;
+}
+
+@media (min-width:1200px) { /* eyeballed width so that background shows decently on most screen types */
 	.navbar-custom {
 		padding:20px 0;
 		border-bottom:0;
@@ -111,20 +126,17 @@ a:hover,a:focus {
 		color:#333;
 		display:inline-block;
 	}
+	
+	.intro {
+		background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('/../images/linsult.jpg');
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size:cover;
+		-o-background-size:cover;
+	}
 }
-.intro {
-	display:table;
-	width:100%;
-	height:auto;
-	padding:100px 0 100px 0;
-	text-align:center;
-	color:#fff;
-	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('/../images/linsult.jpg');
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-	-o-background-size:cover;
-}
+
+
 .intro .intro-body {
 	display:table-cell;
 	vertical-align:middle;
