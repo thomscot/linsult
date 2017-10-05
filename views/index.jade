@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Get insulted by Linus')
+    meta(name='author', content='thomscot')
+    title LINSULT - Feel like a real pro with a free insult from the best
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+    // Navigation
+    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='#page-top')
+            | LINSULT
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#page-top') Home
+            li
+              a(href='#about') About
+            li
+              a(href='contact.html') 
+        // /.navbar-collapse
+      // /.container
+    // Intro Header
+    header.intro
+      .intro-body
+        .container
+          .row
+            .col-md-8.col-md-offset-2
+              h1.brand-heading THIS IS LINSULT
+              p.intro-text TAKE AN INSULT FROM A PRO. FEEL LIKE A PRO.
+              a#insult_btn.btn.btn-circle()
+                i.fa.fa-2x.fa-linux
+              br
+              br
+              br
+              #insultdiv              
+              
+              
+    // About Section
+    section#about
+      .container.content-section.text-center
+        .row
+          h2 WHAT IS THIS SHIT?
+          .col-lg-8.col-lg-offset-2
+            p
+              | A completely nonsensical webpage to receive a random insult from one of the world's top-notch programmers. Who doesn't like you anyway.
+            p
+              a.btnghost(href='#page-top')
+                i.fa.fa-linux
+                |  GET INSULTED
+    footer
+      .container.text-center
+        p.credits
+          |  ©  an idiotic creation by
+          a(href='http://www.tommasoscotti.com', target = "blank")  thomscot
+          br
+          row
+            a(href='https://linkedin.com/in/tommasoscotti', target='blank')
+              i.fa.fa-2x.fa-linkedin
+            a(href='https://github.com/thomscot', target='blank', style='margin-left:50px')
+              i.fa.fa-2x.fa-github
