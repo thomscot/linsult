@@ -528,6 +528,3 @@ I don't mind it if it's *one* line, and if people realize that the commentary in
 
 No. Really. No. ... Thomas, you're in denial. ... Your argument "it has a question mark in front of it" objection is bogus. ... I'm just saying that your arguments to ignore CPU0 are pretty damn weak.
 
-In [ ]:
-
-​
